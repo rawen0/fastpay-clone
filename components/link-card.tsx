@@ -16,7 +16,7 @@ const LinkCard = ({ link, className, childClassName }: Props) => {
     >
       <div
         className={cn(
-          "bg-[#EFF6F8]  rounded flex flex-col items-center justify-center p-3 sm:p-4",
+          "bg-[#EFF6F8]  rounded flex flex-col items-center justify-center p-3 sm:p-4 relative",
           className
         )}
       >

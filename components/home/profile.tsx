@@ -9,7 +9,7 @@ const Profile = async (props: Props) => {
 
   return (
     <div className="lg:col-start-3 w-full col-span-full lg:col-span-8  text-center">
-      <div className="overflow-hidden relative w-full rounded-xl card-bg p-4 md:px-10 md:py-8 flex">
+      <div className="overflow-hidden relative w-full rounded-xl card-bg p-4 py-8 md:px-10 md:py-8 flex">
         <div className="z-20 w-full flex justify-between">
           <ProfileCard.Info />
           <ProfileCard.QRCode />
