@@ -10,7 +10,7 @@ export const links: LinkProps[] = [
   {
     label: "shops",
     Icon: Store,
-    href: "internet-card",
+    href: "shops",
   },
   {
     label: "promotions",

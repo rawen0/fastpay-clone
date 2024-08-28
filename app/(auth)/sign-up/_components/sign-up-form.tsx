@@ -1,14 +1,22 @@
 "use client";
+import { useSearchParams } from "next/navigation";
 import { text } from "@/constants/sign-up";
 import MobileForm from "./moblie-form";
-import Otp from "./otp";
-import FormDetail from "./form-detail";
 import EmailForm from "./email-form";
+import FormDetail from "./form-detail";
+import Otp from "./otp";
 
-const SignUpForm = () => {
-  let step = 1;
+type Props = {};
 
-  switch (step) {
+const SignUpForm = (props: Props) => {
+  const searchParams = useSearchParams();
+  // getting current step of the registry process from url for testing
+  //TODO: change to context
+  const cstep = !searchParams.get("step")
+    ? 1
+    : Number(searchParams.get("step"));
+
+  switch (cstep) {
     case 1:
       return (
         <>
