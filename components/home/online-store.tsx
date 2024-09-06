@@ -1,5 +1,5 @@
 import ThreeColCard from "@/components/three-col-card";
-import { links } from "@/constants/online-store";
+import links from "@/constants/online-store";
 import LinkCard from "../link-card";
 
 type Props = {};

@@ -1,6 +1,6 @@
 "use client";
 import { useSearchParams } from "next/navigation";
-import { text } from "@/constants/sign-up";
+import text from "@/constants/sign-up";
 import MobileForm from "./moblie-form";
 import EmailForm from "./email-form";
 import FormDetail from "./form-detail";

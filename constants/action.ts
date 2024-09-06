@@ -4,7 +4,7 @@ import { LinkProps } from "@/types";
 interface ActionProps extends Omit<LinkProps, "href"> {
   onclick: Function;
 }
-export const actions: ActionProps[] = [
+export default [
   {
     label: "send",
     Icon: Send,
@@ -47,4 +47,4 @@ export const actions: ActionProps[] = [
       console.log("🚀 ~ ():", "clicked");
     },
   },
-];
+] as ActionProps[];

@@ -1,7 +1,7 @@
 import { LinkProps } from "@/types";
 import { FileText, Home, QrCode, UserPlus, Waypoints } from "lucide-react";
 
-export const links: LinkProps[] = [
+export default [
   { label: "home", href: "/", Icon: Home },
   { label: "referral", href: "home", Icon: UserPlus },
   { label: "", href: "qrcode", Icon: QrCode },
@@ -15,4 +15,4 @@ export const links: LinkProps[] = [
     href: "transaction",
     Icon: FileText,
   },
-];
+] as LinkProps[];

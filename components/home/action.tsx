@@ -1,4 +1,4 @@
-import { actions } from "@/constants/action";
+import actions from "@/constants/action";
 import ThreeColCard from "../three-col-card";
 
 type Props = {};

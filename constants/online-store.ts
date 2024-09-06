@@ -1,7 +1,7 @@
 import { LinkProps } from "@/types";
 import { ShoppingCart, Store, Volume1 } from "lucide-react";
 
-export const links: LinkProps[] = [
+export default [
   {
     label: "online store",
     Icon: ShoppingCart,
@@ -17,4 +17,4 @@ export const links: LinkProps[] = [
     Icon: Volume1,
     href: "promotions",
   },
-];
+] as LinkProps[];

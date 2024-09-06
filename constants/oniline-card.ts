@@ -1,7 +1,7 @@
 import { LinkProps } from "@/types";
 import { Coins, Gift, Wifi } from "lucide-react";
 
-export const links: LinkProps[] = [
+export default [
   {
     label: "mobile card",
     Icon: Coins,
@@ -17,4 +17,4 @@ export const links: LinkProps[] = [
     Icon: Gift,
     href: "online-card",
   },
-];
+] as LinkProps[];

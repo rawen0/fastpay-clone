@@ -4,10 +4,12 @@ import StickyNav from "@/components/stiky-navigation";
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
+    <>
       <AppHeader />
-      <AppBody />
-      <StickyNav />
-    </main>
+      <main className="min-h-screen">
+        <AppBody />
+        <StickyNav />
+      </main>
+    </>
   );
 }

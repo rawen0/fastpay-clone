@@ -1,4 +1,4 @@
-import { languages } from "@/constants/languages";
+import languages from "@/constants/languages";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 
@@ -19,7 +19,7 @@ const ACTIVE_LANGUAGE = "english";
 
 const AppLanguages = ({ isDropDown }: Props) => {
   return isDropDown ? (
-    <Select >
+    <Select>
       <SelectTrigger className="w-[90px]">
         <SelectValue placeholder={ACTIVE_LANGUAGE} />
       </SelectTrigger>

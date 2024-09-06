@@ -6,14 +6,16 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 
-export function CarouselSize() {
+const AdsCarousel = () => {
+  /* API call to get carousel content */
   return (
     <div className="col-span-12 lg:col-start-3 w-full rounded  lg:col-span-8">
       <Carousel className="w-full  col-span-full">
         <CarouselContent>
           {Array.from({ length: 5 }).map((_, index) => (
             <CarouselItem key={index}>
-              <Link href={"#"}>
+              {/* link to promotions/[] */}
+              <Link href="#">
                 <Image
                   width={500}
                   height={500}
@@ -29,4 +31,6 @@ export function CarouselSize() {
       </Carousel>
     </div>
   );
-}
+};
+
+export default AdsCarousel;

@@ -1,4 +1,4 @@
-import { links } from "@/constants/sticky-nav-links";
+import links from "@/constants/sticky-nav-links";
 import LinkCard from "@/components/link-card";
 import { QrCode } from "lucide-react";
 

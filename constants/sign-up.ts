@@ -1,11 +1,6 @@
 import { SignUpTextProps } from "@/types";
 
-export const text: {
-  mobile: SignUpTextProps;
-  mobileOTP: SignUpTextProps;
-  email: SignUpTextProps;
-  emailOTP: SignUpTextProps;
-} = {
+export default {
   mobile: {
     title: "Sign-up with your mobile number",
     detail:
@@ -23,4 +18,9 @@ export const text: {
     title: "Verification code email otp",
     detail: "we send your verification code to email otp",
   },
+} as {
+  mobile: SignUpTextProps;
+  mobileOTP: SignUpTextProps;
+  email: SignUpTextProps;
+  emailOTP: SignUpTextProps;
 };

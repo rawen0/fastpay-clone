@@ -1,5 +1,5 @@
 import Action from "./home/action";
-import { CarouselSize } from "./home/advertisement";
+import AdsCarousel from "./home/advertisement";
 import HelpSupport from "./home/help-support";
 import OnlineCard from "./home/online-card";
 import OnlineStore from "./home/online-store";
@@ -14,11 +14,8 @@ const AppBody = (props: Props) => {
       <Action />
       <OnlineCard />
       <OnlineStore />
-      <CarouselSize />
+      <AdsCarousel />
       <HelpSupport />
-      {/* <div className="col-start-3  col-span-8 bg-blue-500 text-white text-center p-4">
-        More Card
-      </div> */}
     </section>
   );
 };

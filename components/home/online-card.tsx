@@ -1,4 +1,4 @@
-import { links } from "@/constants/oniline-card";
+import links from "@/constants/online-card";
 import ThreeColCard from "@/components/three-col-card";
 import LinkCard from "@/components/link-card";
 

@@ -1,1 +1,1 @@
-export const languages = ["english", "کوردی", "‌عربی"];
+export default ["english", "کوردی", "‌عربی"];

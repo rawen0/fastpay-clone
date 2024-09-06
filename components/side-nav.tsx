@@ -1,4 +1,4 @@
-import { links } from "@/constants/sidebar-nav-links";
+import links from "@/constants/sidebar-nav-links";
 import Link from "next/link";
 
 type Props = {};

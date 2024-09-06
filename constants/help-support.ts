@@ -1,7 +1,7 @@
 import { LinkProps } from "@/types";
 import { Clapperboard, Info } from "lucide-react";
 
-export const links: LinkProps[] = [
+export default [
   {
     label: "help center",
     Icon: Info,
@@ -12,4 +12,4 @@ export const links: LinkProps[] = [
     Icon: Clapperboard,
     href: "how-to-videos",
   },
-];
+] as LinkProps[];

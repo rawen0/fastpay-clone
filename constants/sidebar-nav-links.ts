@@ -9,7 +9,7 @@ import {
   User2,
 } from "lucide-react";
 
-export const links: LinkProps[] = [
+export default [
   {
     label: "my account",
     href: "#",
@@ -45,4 +45,4 @@ export const links: LinkProps[] = [
     href: "#",
     Icon: Power,
   },
-];
+] as LinkProps[];
