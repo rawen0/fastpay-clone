@@ -1,10 +1,10 @@
-import links from "@/constants/online-card";
+import links from "@/constants/voucher-card";
 import ThreeColCard from "@/components/three-col-card";
 import LinkCard from "@/components/link-card";
 
 type Props = {};
 
-const OnlineCard = (props: Props) => {
+const VoucherCard = (props: Props) => {
   return (
     <ThreeColCard title="Recharge & gift cards">
       {links.map((link) => (
@@ -17,4 +17,4 @@ const OnlineCard = (props: Props) => {
   );
 };
 
-export default OnlineCard;
+export default VoucherCard;
