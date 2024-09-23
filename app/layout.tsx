@@ -32,6 +32,9 @@ export default function RootLayout({
           fontSans.variable
         )}
       >
+        {/* fixing problem with position: sticky */}
+        <div className="sr-only fixed"></div>
+
         {children}
       </body>
     </html>

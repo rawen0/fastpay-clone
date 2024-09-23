@@ -1,9 +1,11 @@
+import AccountTabs from "./_components/tabs/account";
 import { notFound } from "next/navigation";
 import RechargeList from "./_components/recharge-list";
-import { GridWrapper } from "./_components/grid";
 import Heading from "./_components/heading";
 import ShopList from "./_components/shops-list";
 import PromotionList from "./_components/promotion-list";
+import Help from "./_components/tabs/help";
+import VideoList from "./_components/video-list";
 
 type Props = {
   params: { page: string[] };
@@ -17,10 +19,10 @@ const ElectronicContents = ({ params }: Props) => {
     case "online-card":
     case "internet-card":
       return (
-        <GridWrapper>
+        <>
           <Heading title={`${page[0].replace("-", " ")}s`} />
           <RechargeList path={page[0]} />
-        </GridWrapper>
+        </>
       );
 
     case "shops":
@@ -28,14 +30,14 @@ const ElectronicContents = ({ params }: Props) => {
     case "online-store":
       if (page[0] === "promotions")
         return (
-          <GridWrapper>
+          <>
             <Heading title="promotions" />
             <PromotionList />
-          </GridWrapper>
+          </>
         );
 
       return (
-        <GridWrapper>
+        <>
           <Heading
             title={
               page[0].includes("online")
@@ -44,18 +46,42 @@ const ElectronicContents = ({ params }: Props) => {
             }
           />
           <ShopList url={page[0]} />
-        </GridWrapper>
+        </>
       );
 
     case "help":
+      return (
+        <>
+          <Heading
+            hideSearch
+            title="support"
+            className="px-2.5"
+          />
+          <div className="col-span-12 h-[560px] max-sm:h-screen  rounded w-full bg-muted">
+            <Help />
+          </div>
+        </>
+      );
     case "how-to-videos":
       return (
-        <GridWrapper>
-          <Heading title={page[0] === "help" ? "support" : "how to videos"} />
-          {/* help & how to video component */}
-        </GridWrapper>
+        <>
+          <Heading title="how to videos" />
+          <VideoList />
+        </>
       );
 
+    case "account":
+      return (
+        <>
+          <Heading
+            hideSearch
+            title="MY ACCOUNT"
+          />
+          <div className="col-span-12 h-[560px] max-sm:h-screen  rounded w-full bg-muted">
+            <AccountTabs />
+          </div>
+        </>
+      );
     default:
       return notFound();
   }

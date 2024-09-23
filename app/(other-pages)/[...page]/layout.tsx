@@ -1,20 +1,17 @@
 import AppHeader from "@/components/app-header";
-import Heading from "./_components/heading";
+import { GridWrapper } from "./_components/grid";
 
 export default function RootLayout({
   children,
-  params,
 }: Readonly<{
   children: React.ReactNode;
-  params: {
-    page: string[];
-  };
 }>) {
   return (
     <>
-      <AppHeader isHome={params.page.length === 0} />
-      {/* if length === 0 then it's home */}
-      <main>{children}</main>
+      <AppHeader isHome={false} />
+      <main>
+        <GridWrapper>{children}</GridWrapper>
+      </main>
     </>
   );
 }
